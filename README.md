@@ -119,11 +119,12 @@ npm install
 
 Create `.env` file:
 ```env
+
 PORT=5000
-MONGO_URI=mongodb+srv://nad_db_user:a2OviVvAkqQfo67E@cluster0.tbkowia.mongodb.net/learning_center?appName=Cluster0
-JWT_SECRET=Dagi@12c
-EMAIL_USER=dagimawiephrem18@gmail.com
-EMAIL_PASS=Daqwe1243#
+MONGO_URI=your_mongodb_connection_string_here
+JWT_SECRET=your_jwt_secret_key_here
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_app_password_here
 ADMIN_EMAIL=admin@learningcenter.com
 ```
 
@@ -483,4 +484,5 @@ Password: admin123
 ```
 
 **⚠️ IMPORTANT: Change default password after first login!**
+
 
