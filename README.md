@@ -84,10 +84,7 @@ Learning-center/
 │
 ├── frontend/                   # Frontend Application (Divided between 2 developers)
 │   ├── src/
-│   │   ├── admin/           # Admin panel (Managed by Person 2)
-│   │   │   ├── pages/      # Admin pages
-│   │   │   ├── components/ # Admin components
-│   │   │   └── styles/     # Admin CSS
+│   │   ├
 │   │   ├── api/            # API services (Person 2)
 │   │   ├── components/     # Public components (Person 1)
 │   │   ├── pages/          # Public pages (Person 1)
@@ -110,7 +107,7 @@ Learning-center/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/Learning-center.git
+git clone https://github.com/dagi1218/GIVE--web-development-pathway
 cd Learning-center
 ```
 
@@ -123,10 +120,10 @@ npm install
 Create `.env` file:
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
+MONGO_URI=mongodb+srv://nad_db_user:a2OviVvAkqQfo67E@cluster0.tbkowia.mongodb.net/learning_center?appName=Cluster0
+JWT_SECRET=Dagi@12c
+EMAIL_USER=dagimawiephrem18@gmail.com
+EMAIL_PASS=Daqwe1243#
 ADMIN_EMAIL=admin@learningcenter.com
 ```
 
@@ -136,11 +133,7 @@ npm start
 # Server runs on http://localhost:5000
 ```
 
-Seed the database:
-```bash
-node seed/seedAdmin.js
-node seed/seedAllLessons.js
-```
+
 
 ### 3. Frontend Setup
 ```bash
@@ -158,7 +151,7 @@ npm run dev
 
 ### Team Responsibilities
 
-#### **Backend Developer** ([Your Name])
+#### **Backend Developer** (dagmawi ephrem)
 - API development and maintenance
 - Database design and management
 - Authentication system
@@ -166,7 +159,7 @@ npm run dev
 - API documentation
 - Deployment configuration
 
-#### **Frontend - Person 1** (Public UI)
+#### **Frontend - Natanim ketsela** (Public UI)
 - Landing page and public pages
 - Lesson display components
 - Navigation and layout
@@ -174,7 +167,7 @@ npm run dev
 - Public CSS styling
 - User interface components
 
-#### **Frontend - Person 2** (Admin & API Integration)
+#### **Frontend - Aron Nebiyou** (Admin & API Integration)
 - Admin panel pages
 - Authentication flow
 - API service integration
@@ -210,26 +203,22 @@ chore:    Maintenance
 
 ### File Assignment
 
-#### **Person 1 - Public UI:**
+#### **Natanim - Public UI:**
 ```
-src/pages/Landing.jsx
-src/pages/Lessons.jsx
-src/pages/Lesson.jsx
-src/pages/About.jsx
-src/pages/Contact.jsx
-src/components/Navigation.jsx
-src/components/Footer.jsx
-src/components/Sidebar.jsx
-src/components/LessonCard.jsx
-src/styles/
+src/pages/user
+src/api/
+src/styles/user
 public/
 App.jsx (public routes)
 ```
 
-#### **Person 2 - Admin & API:**
+#### **Aron  - Admin & API:**
 ```
-src/admin/
-src/api/
+src/pages/admin/
+src/components/
+src/styles/component
+src/styles/admin
+
 src/context/
 App.jsx (admin routes)
 ```
@@ -330,25 +319,7 @@ EMAIL_PASS=your-app-password
 ADMIN_EMAIL=admin@learningcenter.com
 ```
 
-## 📦 Deployment
 
-### Backend Deployment (Railway/Heroku/Render)
-```bash
-# Install Railway CLI
-npm i -g @railway/cli
-
-# Deploy
-railway up
-```
-
-### Frontend Deployment (Vercel/Netlify)
-```bash
-# Build for production
-npm run build
-
-# Deploy to Vercel
-vercel --prod
-```
 
 ## 🧪 Testing
 
@@ -512,3 +483,4 @@ Password: admin123
 ```
 
 **⚠️ IMPORTANT: Change default password after first login!**
+
