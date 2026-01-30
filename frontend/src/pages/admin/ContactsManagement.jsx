@@ -1,4 +1,4 @@
-// frontend/src/admin/pages/ContactsManagement.jsx
+
 import { useEffect, useState } from 'react';
 import { getContacts, updateContact } from '../../api/admin';
 import AdminLayout from '../../component/AdminLayout';
@@ -47,7 +47,7 @@ function ContactsManagement() {
   const handleStatusUpdate = async (id, newStatus) => {
     try {
       await updateContact(id, { status: newStatus });
-      // Refresh contacts
+      
       loadContacts();
       if (selectedContact?.id === id) {
         setSelectedContact(null);

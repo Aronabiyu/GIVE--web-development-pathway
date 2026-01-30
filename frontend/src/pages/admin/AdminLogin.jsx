@@ -31,7 +31,7 @@ function AdminLogin() {
 
     try {
       await adminLogin(formData.email, formData.password);
-      // Redirect to dashboard on success
+      
       window.location.href = '/admin/dashboard';
     } catch (err) {
       setError(err.message || 'Login failed. Please check your credentials.');
@@ -81,7 +81,7 @@ function AdminLogin() {
               disabled={loading}
               required
             />
-            {/* Optional: Add password strength indicator */}
+          
             <div className="password-strength strength-strong">
               <span>Password strength:</span>
               <div className="strength-bar">
@@ -121,7 +121,7 @@ function AdminLogin() {
           </p>
         </div>
         
-        {/* Loading overlay (optional) */}
+        
         <div className={`loading-overlay ${loading ? 'active' : ''}`}>
           <div className="spinner"></div>
         </div>
